@@ -23,7 +23,7 @@ This project applies Bayesian causal inference techniques to the [Auto MPG datas
 
 | File | Description |
 |------|-------------|
-| `bayesian_causality_mpg.ipynb` | Main notebook containing code, graphs, queries, and interventions |
+| `bayesian_causality.ipynb` | Main notebook containing code, graphs, queries, and interventions |
 | `requirements.txt` | List of required Python packages |
 | `LICENSE` | MIT License |
 | `.gitignore` | Ignore Jupyter checkpoints and system files |
