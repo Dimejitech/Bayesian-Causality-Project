@@ -80,7 +80,7 @@ P(cylinders | do(displacement='low'))
 ```
 
 ## 📈 Sample Output
-###➤ Conditional Query
+### ➤ Conditional Query
 
 ```
 # Query: What is the distribution of mpg given weight=high and acceleration=low?
