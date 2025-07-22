@@ -88,15 +88,12 @@ query = infer.query(variables=['mpg'], evidence={'weight': 'high', 'acceleration
 print(query)
 ```
 
-+-------------+------------+
-| mpg         |   phi(mpg) |
-+=============+============+
-| mpg(high)   |     0.0023 |
-+-------------+------------+
-| mpg(low)    |     0.9205 |
-+-------------+------------+
-| mpg(medium) |     0.0771 |
-+-------------+------------+
+| mpg           | φ(mpg)   |
+|---------------|----------|
+| mpg(high)     | 0.0023   |
+| mpg(low)      | 0.9205   |
+| mpg(medium)   | 0.0771   |
+
 
 ### ➤ Interventional Query
 ```
@@ -105,15 +102,12 @@ result = do_intervention(model, intervention_var='displacement', intervention_va
 print(result)
 ```
 
-+-------------------+------------------+
-| cylinders         |   phi(cylinders) |
-+===================+==================+
-| cylinders(high)   |           0.2636 |
-+-------------------+------------------+
-| cylinders(low)    |           0.5155 |
-+-------------------+------------------+
-| cylinders(medium) |           0.2208 |
-+-------------------+------------------+
+| cylinders         | φ(cylinders) |
+|-------------------|--------------|
+| cylinders(high)   | 0.2636       |
+| cylinders(low)    | 0.5155       |
+| cylinders(medium) | 0.2208       |
+
 
 ## 🛠️ How to Run
 ### 1. Clone the repository
